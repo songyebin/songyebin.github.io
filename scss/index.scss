@@ -20,7 +20,7 @@ html, body{height: 100%;}
 #container{width:100%; height:100%;}
 #headBox{width:100%; height:8.125rem;/* 130px */ background-color: rgba($sub4, .3);}
 #gnb{width: 60rem;/* 960px */ height: 3.75rem;/*60px;*/  }/* 메뉴 */
-#banner{width: 100%; height:100%;/* 408px*2 = 51rem */ background-image: url(../img/background-img/Nice-Summer-Desktop-for-Windows.jpg); background-repeat: no-repeat; background-size: cover} /*동영상 넣을 곳*/
+#banner{width: 100%; height:100%;/* 408px*2 = 51rem */ background-image: url(../img/Nice-Summer-Desktop-for-Windows.jpg); background-repeat: no-repeat; background-size: cover} /*동영상 넣을 곳*/
 #content{width:100%; height:25.5rem;/*25.5rem*//* 408px */ padding: 0.9375rem 0;   }
 #footBox{width:100%; height:6.875rem;/* 110px */ background-color:$foot;}
 
@@ -47,14 +47,14 @@ html, body{height: 100%;}
     }// #banner
     
   
-    #content{ float:left; background-image: url(../img/background-img/Nice-Summer-Desktop-for-Windows.jpg); background-size: 100%; background-repeat: no-repeat; background-position: 0 -170px;
+    #content{ float:left; background-color: #ddd;
         >ul{width: 100rem;/*1025px*/; height: 25rem;/* 343px */ text-align: center; margin:auto; 
             >li{width: 25rem;/* 240px/1025*100 */ height: 100%; float: left; border: $line;
                 box-sizing: border-box;
-            &:nth-child(1){background-color:rgba(#aca, .5); border-right: 0;}
+            &:nth-child(1){background-color:rgba(#de7014, .5); border-right: 0;}
             &:nth-child(2){background-color:rgba(#caf, .8); border-right: 0;}
-            &:nth-child(3){background-color:rgba(#fcc, .5); border-right: 0;}
-            &:nth-child(4){background-color:rgba(#cba, .8); }
+            &:nth-child(3){background-color:rgba(#ed8dcf, .5); border-right: 0;}
+            &:nth-child(4){background-color:rgba(#77b2e7, .8); }
             } //li
             
             li>a{width: auto; height: auto/*33vw*/; display: block; color:$white; font-weight: bold; font-size: 2rem; line-height: 25rem; text-decoration: none;
