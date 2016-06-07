@@ -10,48 +10,91 @@
     <script src="./js/jquery/jquery-1.12.3.min.js"></script>
     <script src="./js/jquery/jquery-migrate-1.12.3.min.js"></script>
     <script src="./js/jquery/jquery-ui.min.js"></script>
+    <script src="./js/me_home.js"></script>
     
-    <title>Document</title>
+    <title>SongYebin's Page</title>
     <style></style>
     <script>
-     $(function(){
-        
-//         var $content = ('#content')
-//         
-//         $content.css({
-//             ul>li>a{}
-         })
-         
-     });
+    $(document).ready(function(){
+            me_home();
+		}) // script
     </script>
 </head>
 <body>
     <div id="container">
+       <div id="headWrap">
         <header id="headBox">
-            <h1>yebin Logo</h1>
+            <h1><a href="index.html">SongYeBin</a></h1>
             <nav id="gnb">
                 <ul>
-                    <li><a href="#">HOME</a></li>
-                    <li><a href="#">ABOUT</a></li>
-                    <li><a href="#">WORK</a></li>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="#content_01">ABOUT</a></li>
+                    <li><a href="#content_02">PORTFOLIO</a></li>
                     <li><a href="#">EXPERIENCE</a></li>
                     <li><a href="#">BOARD</a></li>
                 </ul>
             </nav>
         </header><!--// #headBox-->
+        </div><!--// #headWrap-->
         
-        <container id="banner">
+        <section id="banner">
             <h2><span>배경화면으로 동영상넣을곳</span></h2>
-        </container><!--// #banner-->
+            <!--<p>BE WHERE YOU WANT TO BE</p>-->
         
-        <article id="content">
+        
+      
+        
+        
+        </section><!--// #banner-->
+        
+        
+        <section id="content_01">
+            
+            <div class="aboutBox">
+		<div class="acc_01">
+			<dl class="aboutBox_01">
+				<dt class="aboutBtn_01">나의 정보</dt>
+				<dd class="widthView">acc_content</dd>
+			</dl>
+		</div>
+		<div class="acc_02">
+			<dl class="aboutBtn_02">
+				<dt class="aboutBox_02">나의 이력</dt>
+				<dd>acc_content</dd>
+			</dl>
+		</div>
+		<div class="acc_03">
+			<dl class="aboutBtn_03">
+				<dt class="aboutBox_03">공모전</dt>
+				<dd>acc_content</dd>
+			</dl>
+		</div>
+		<div class="acc_04">
+			<dl class="aboutBtn_04">
+				<dt class="aboutBox_04">전시경력</dt>
+				<dd>acc_content</dd>
+			</dl>
+		</div>
+		<div class="acc_05">
+			<dl class="aboutBtn_05">
+				<dt class="aboutBox_05">포트폴리오</dt>
+				<dd>acc_content</dd>
+			</dl>
+		</div>
+	</div>
+            
+        </section>
+        
+        <article id="content_02">
             <ul>
-                <li><a href="#">ABOUT</a></li>
+                <li><a href="#content_01">ABOUT</a></li>
                 <li><a href="#">WORK_WEB</a></li>
                 <li><a href="#">WORK_CRAFT</a></li>
                 <li><a href="#">EXPERIENCE</a></li>
             </ul>
         </article><!--// #content-->
+        
+        <button>↑ top</button>
         
         <footer id="footBox"><p>copyright yebinSong</p></footer><!--// #footBox-->
     </div><!--// #container-->
