@@ -1,0 +1,178 @@
+// index_pc.scss
+
+@media screen and (min-width:1025px){
+
+.pc_hidden{width: 0; height: 0; display: none;}
+
+//___팝업창________________!!
+#topAdd{width: 24rem; height: 24rem;  position: absolute; z-index: 5000; border-radius: 50%; top: 20%; left: 15%; background-color: rgba(#504739, 0.7);}
+#topAdd>p{width: 100%; height: auto; line-height:3rem; color: #fff; font-size: 1.1rem; float: left; text-align: center; margin-top:8rem;}
+/*#topAdd>.addbox{width: 100%; height:100%; float: left;}
+#topAdd>.addbox>a{color: #faa;}*/
+#topAdd>button{width: 2rem; height: 2rem; float: right; border-radius: 50%; color: #111; font-weight: bold; font-size: 1.2em; position:absolute; top: 18rem; right: 11rem; }
+
+//__메인페이지 시작________!!___________
+
+#container{
+    #headWrap{
+    >#headBox{width: 70vw; height: auto; position: absolute; z-index:1000; left: 20%; top: 3rem;
+        >h1{width: 150px; height: 30px;  
+         background-repeat: no-repeat; display: block; float: left; 
+        }// h1
+
+    #gnb{width:34rem/*600px*/; height: auto; float:right; 
+        >ul{width:34rem/*600px*/; height: 100%; 
+            &::after{content:""; display: block; clear: both;}
+        
+        >li{width: auto; height: 30px; margin-right: 4%; float: left; font-size:1.375rem; letter-spacing: 0.1em; 
+                font-size:22px; font-family: 'PT Serif', serif;
+//         &:hover{transform:matrix(1, 0, 0, 1, 0, 0); transition: transform 0.3s ease 0s; }
+//           &:hover{transform:rotateX(360deg); background-color: rgba(255,255,255,0.7); font-weight: bold;}
+          &:last-child{margin-right: 0;}
+        }// li
+
+      }// ul
+
+        >ul>li>a{width: 50px; height: 100px; font-size: 1rem; color:$white; font-weight: bold; text-decoration: none;
+        &:hover{border-bottom:2px solid #E6E6E6;}
+        }//a
+        
+    }// #gnb
+    } // #headBox
+    
+    .videoWrap{width: 100%; height: auto; float: left;}
+        
+    #movie_btn{width: auto; height: auto; /*background-color: rgba(#333, .45);*/ position: absolute; z-index: 1000; right: -8%; top: 11vh; 
+       &.inbox{right:0vw}
+       }// #movie_btn
+        #menu_ctn{width:7.6vw ;/* 140px / 16 */ height:auto; position: relative;
+          >button{width: 30rem; height: 36.5vw; margin-left:-3rem; cursor: pointer; z-index: -50; background-color: #111; /*opacity: 0.8;*/ border-radius:0.4rem 0 0 0.4rem; position: absolute; top: 0; left: 0;
+            &:hover{background-color: #111;}
+              p{display: inline-block; color:#fff;}
+          }
+            >.slide_menu{width: auto; height: auto; padding:24px 14px; 
+                >li{width: 6vw;/* 110px = 6.875rem */ height: 6vw; text-align: center; border-radius: 500px; margin-bottom: 10px;  
+                     overflow: hidden;
+                    &:nth-child(1){background-image: url("../img/toystory.jpg"); background-size: cover; background-repeat: no-repeat; background-position: center;}
+                    &:nth-child(2){background-image: url("../img/nimo.jpg"); background-size: cover; background-repeat: no-repeat; background-position: center;}
+                    &:nth-child(3){background-image: url("../img/incredicles.jpg"); background-size: cover; background-repeat: no-repeat; background-position: center;}
+                    &:nth-child(4){background-image: url("../img/insideOut.jpg"); background-size: cover; background-repeat: no-repeat; background-position: center;}
+                    &:last-child{background-image: url("../img/monster.Inc.jpg"); background-size: cover; background-repeat: no-repeat; background-position: center; margin-bottom: 0;}
+                    &:hover > a{background-color:rgba(#111, 0.5); display: block;}
+                a{width: 100%; height: 60%; padding-top: 40%; line-height:1.2; font-size: .9rem; color:#fff; display: none;
+                text-decoration: none; font-weight: bold; 
+                  } // a
+                }// li
+          
+            }// .slide_menu _________ ol
+        
+        } // #menu_ctn_____________
+
+        } // #headWrap
+    
+    #banner{width: 0; height: 0; display: none;}
+    #content_01{width: 0; height: 0; display:none;}
+    #content_02{ background-color: #111;
+    
+    .careerWrap{margin:4rem auto;
+   
+    
+    
+    // Page Title
+    h1 {text-align:center; color:#ffba00; font-size: 1.6rem;  font-weight: bold;  margin-bottom: 1rem;}
+    p {text-align:center; color:#eee; font-size:1rem; line-height: 1.8rem;}
+        
+    } // .careerWrap
+        
+    .con01_box {
+         // Accordion Height 
+    $a-height: 500px;
+    // Position text along bottom
+    $text-offset: $a-height - 90;
+        
+    width:100%; max-width:1080px; height:$a-height; overflow:hidden; margin:40px auto;
+      ul {width:100%; display:table; table-layout:fixed; margin:0; padding:0;
+        li {display:table-cell; vertical-align:bottom; position: relative; width:16.666%; // 6 into 100
+          height:$a-height;background-repeat:no-repeat; background-position:center center; background-size: cover; transition:all 500ms ease;
+          div {display:block; overflow:hidden; width:100%;
+            a {display:block; height:$a-height; width:100%;
+              position:relative; z-index:3; vertical-align:bottom; padding:15px 20px; box-sizing:border-box;
+              color:#fff; text-decoration:none; transition:all 200ms ease;
+              * {opacity:0; margin:0; width:100%; text-overflow:ellipsis; position:relative; z-index:5; white-space:nowrap;
+                overflow:hidden; -webkit-transform:translateX(-20px);
+                transform:translateX(-20px); -webkit-transition:all 400ms ease;
+                transition:all 400ms ease;}
+              h2{/* text-overflow:clip; */ font-size:2rem; text-transform:uppercase;
+                margin-bottom:2px; top:$text-offset; display: block; color:#fff;}
+              p {top:$text-offset; font-size:13.5px; color:#fff;}
+            } //a
+          } // div
+        }// li
+    
+    // Background images
+    li:nth-child(1) { background-image:url('../img/pixar-office.jpg'); }
+    li:nth-child(2) { background-image:url('../img/officer.jpg'); }
+    li:nth-child(3) { background-image:url('../img/drowing.jpeg'); }
+    li:nth-child(4) { background-image:url('../img/working.jpg'); }
+    li:nth-child(5) { background-image:url('../img/meeting.jpg'); }
+    li:nth-child(6) { background-image:url('../img/animator.jpg'); }
+    &:hover li { width:8%; }
+    &:hover li:hover {width:60%;
+      a {background:rgba(0,0,0,.4);
+        * {opacity:1; -webkit-transform:translateX(0); transform:translateX(0);
+        } // *
+      }// a
+    }// &:hover li:hover
+  } //ul
+} // .con01_box
+
+
+//_________________________________________________________________________
+/* // Stack items
+@media screen and (max-width: 600px) {
+  
+  // IE gets fussy if this isn't here
+  body { margin:0; }
+  
+  .con01_box {height:auto;
+    ul,ul:hover {
+      li,li:hover {
+      position:relative; display:table; table-layout:fixed; width:100%;
+        -webkit-transition:none; transition:none;}
+    } // ul,ul:hover 
+  } //.con01_box
+} // max-width : 600px */
+} // #content_02       
+
+    #footBox{
+        .footWrap{width: 60vw; height: 3rem; margin: 0 auto; margin-top: 2rem;
+            ul{width: 60vw; height: auto; float: left;
+                li{width: auto; height: auto; float: left; color: $white; display: inline-block; height: 35px; 
+                    p{line-height: 35px; color:#fff;
+                        &::after{content: "|"; margin-right: 10px;}
+                    }
+                    &:nth-child(1){width: 35px; height: 35px;background-color:#fff;}
+                    &:nth-child(2){width: 35px; height: 35px;background-color:#faf; margin-right: 15px;}
+                    &:nth-child(3){}
+                    &:nth-child(4){}
+                    &:last-child{margin-right: 0;}
+                }
+            }
+        }
+    
+    }// #footBox
+    
+    } // #container
+    
+    }// pc
+
+
+
+
+
+
+
+
+
+
+
