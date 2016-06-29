@@ -1,0 +1,80 @@
+/*-------#wrap ---------------------------------------*/
+#wrap {width: 100%; height: auto;}
+#wrap>div{margin: 0 auto;}
+
+
+/*------#header----------------------------------------*/
+
+#header_wrap {width: 100%; height: 88px; border-bottom: 3px solid #ef4223; }
+#header{width: 978px;height: 100%; margin: 0 auto;}
+h1 {width: 142px;height: 54px; float: left; margin-top: 6px;}
+h1>a {width: 100%;height: 100%; display: block; background-image: url("../img/header/logo.jpg"); background-repeat: no-repeat;}
+h1>a>span{width: 0;height: 0; display: block; overflow: hidden;}
+#sitemap_wrap{width: 100%; height: 20px; margin: 0 auto; background-color: #ef4223;}
+#sitemap{width: 978px; height: 100%; margin: 0 auto;}
+#sitemap>ul{width: 235px; height: 12px; float: right; margin-right: 9px; margin-top: 4px;}
+#sitemap>ul>li{height: 100%; float: left;}
+#sitemap>ul>.site_01{width: 50px;margin-right: 20px;}
+#sitemap>ul>.site_02{width: 64px;margin-right: 11px;}
+#sitemap>ul>.site_03{width: 90px;}
+/*#sitemap>ul a{width: 100%; height: 100%; display: block;}*/
+#sitemap>ul>.site_01>a{background-image: url("../img/header/site_home.jpg");}
+#sitemap>ul>.site_02>a{background-image: url("../img/header/site_sitemap.jpg");}
+#sitemap>ul>.site_03>a{background-image: url("../img/header/site_contactUs.jpg");}
+
+#gnb{width: 100%; height: 65px;}
+#gnb>ul{width: 705px; height: 24px; background-color: #fff; float: right; margin-top: 20px; margin-right: 49px;}
+#gnb>ul>li{height: 100%; float: left;}
+#gnb>ul>.gnb_01{width: 90px;margin-right: 75px;}
+#gnb>ul>.gnb_02{width: 70px;margin-right: 90px;}
+#gnb>ul>.gnb_03{width: 66px;margin-right: 64px;}
+#gnb>ul>.gnb_04{width: 125px; margin-right: 65px;}
+#gnb>ul>.gnb_05{width: 60px;}
+#gnb>ul>.gnb_01>a{background-image: url("../img/header/gnb_company.jpg");}
+#gnb>ul>.gnb_02>a{background-image: url("../img/header/gnb_brand.jpg");}
+#gnb>ul>.gnb_03>a{background-image: url("../img/header/gnb_menu.jpg");}
+#gnb>ul>.gnb_04>a{background-image: url("../img/header/gnb_franchise.jpg");}
+#gnb>ul>.gnb_05>a{background-image: url("../img/header/gnb_news.jpg");}
+
+/*------#banner ---------------------------------*/
+
+#banner{width: 100%; height: 500px; background-color: #FFF; border-bottom: 3px solid #EF4223;}
+#banner>div{width: 100%; height: 100%; background-image: url("../img/banner/banner.jpg"); background-repeat: no-repeat; background-position: center;}
+
+
+
+
+
+/*------#article ---------------------------------*/
+
+#article{width: 978px; height: 512px;}
+#article>ul{width:100%; height:400px; margin-top: 50px;}
+#article>ul>li{float: left;}
+#article>ul>.artcleMenu_01{width: 326px;height: 200px;}
+#article>ul>.artcleMenu_02{width: 326px;height: 200px;}
+#article>ul>.artcleMenu_03{width: 326px;height: 200px;}
+#article>ul>.artcleMenu_04{width: 326px;height: 200px;}
+#article>ul>.artcleMenu_05{width: 326px;height: 200px;}
+#article>ul>.artcleMenu_06{width: 326px;height: 200px;}
+#article>ul>.artcleMenu_01>a{background-image: url("../img/article/video.jpg");}
+#article>ul>.artcleMenu_02>a{background-image: url("../img/article/brand.jpg");}
+#article>ul>.artcleMenu_03>a{background-image: url("../img/article/menu.jpg");}
+#article>ul>.artcleMenu_04>a{background-image: url("../img/article/company.jpg");}
+#article>ul>.artcleMenu_05>a{background-image: url("../img/article/franchise.jpg");}
+#article>ul>.artcleMenu_06>a{background-image: url("../img/article/news.jpg");}
+
+
+
+
+
+/*------#footer ---------------------------------*/
+
+#footer_wrap {width: 100%; height: 300px; background-color: #333;}
+#footer {width: 978px; height: 100%; margin: 0 auto; padding-top: 30px;}
+#f_logo {width: 100px;height: 36px; margin-left: 30px; display: block; float: left;}
+#f_logo>a {width: 100px; height: 36px; background-image: url("../img/footer/footer_logo.jpg"); display: block;}
+hr{width: 96%; float: left; border-bottom: 1px solid #fff; margin: 12px 0; opacity: 0.1; margin-left: 2%;}
+#footer address {width: 728px; padding-left:25px;color: #fff; float: left;}
+#footer address>span {margin:0 5px; color:inherit; opacity: 0.5;}
+#footer address>p{margin-top:10px; color: #fff}
+#footer address>.custom_service{font-weight: bold; color: #fff}
