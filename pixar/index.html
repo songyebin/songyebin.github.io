@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/lib/reset.css" />
+    <link rel="stylesheet" href="./css/index_pixar333.css" />
+    
+    <script src="./js/jquery/jquery-1.12.3.min.js"></script>
+    <script src="./js/jquery/jquery-migrate-1.12.3.min.js"></script>
+    <script src="./js/jquery/jquery-ui.min.js"></script>
+    <script src="./js/me_pixar.js"></script>
+    
+    <title>Pixar</title>
+    <style></style>
+    <script>
+    $(document).ready(function(){
+            pixarYebin();
+            topAdd($('#topAdd'));
+            slideBanner($('#banner'));
+		}); // script
+    </script>
+</head>
+<body>
+
+<!-- 팝업창 -->
+
+<div id="topAdd">
+    
+    
+    <p>본 페이지는 영리를 목적으로 하지 않는 <br />
+    개인 포트폴리오 제작을 위한 학습 사이트입니다.</p>
+    <button type="button" aria-label="닫기">x</button>
+ 
+  </div>
+
+
+    <div id="container">
+       <div id="headWrap">
+        <header id="headBox">
+
+            <h1>
+                <a href="index.html">
+                    <img src="./img/pixarLogo.png" alt="">
+                    <span>pixar</span>
+                </a>
+            </h1>
+
+            <nav id="gnb" class="gnb_open">
+            <button class="gnb_btn tab_hidden pc_hidden">버튼</button>
+                <ul class="mob_hidden">
+                    <li><a href="index.html">About</a></li>
+                    <li class="pc_hidden"><a href="#content_02">Careers</a></li>
+                    <li><a href="#">Short films</a></li>
+                    <li><a href="#">Rander Man</a></li>
+                    <li class="tab_hidden"><a href="#">Feature Films</a></li>
+                </ul>
+            </nav>
+        </header><!--// #headBox-->
+
+        <div id="movie_btn">
+            <nav id="menu_ctn">
+            <button type="button"><p>Feature Films</p></button>
+            <ol class="slide_menu">
+                <li><a href="#">토이 스토리</a></li>
+                <li><a href="#">니모를 찾아서</a></li>
+                <li><a href="#">인크레더블</a></li>
+                <li><a href="#">인사이드 아웃</a></li>
+                <li><a href="#">몬스터 주식회사</a></li>
+            </ol>
+        </nav> <!-- // #menu_ctn -->
+        </div>
+           
+       
+        </div><!--// #headWrap-->
+        
+        <section id="banner">
+            <h2><span>배경화면으로 동영상넣을곳</span></h2>
+            <div id="banner_box">
+                
+                <h3>배너슬라이드 넣기</h3>
+        <ul>
+          <li class="ban_1"><span>banner_1</span></li>
+          <li class="ban_2"><span>banner_2</span></li>
+          <li class="ban_3"><span>banner_3</span></li>
+          <li class="ban_4"><span>banner_4</span></li>
+          <li class="ban_5"><span>banner_5</span></li>
+        </ul>
+            </div>             
+  
+      <div class="banner_btn btn_left">
+      <button aria-label="슬라이드 왼쪽 버튼">&lt;</button>
+      </div>
+      <div class="banner_btn btn_right">
+      <button aria-label="슬라이드 오른쪽 버튼">&gt;</button>
+            </div>
+        </section><!--// #banner-->
+        
+        <div class="videoWrap">
+        <video autoplay muted="autoplay" class="mob_hidden tab_hidden" > <!-- autoplay="autoplay" -->
+            <source src="./multi/FindingDoryNewClipsTrailer.mp4" type="video/mp4" />
+         </video>
+         </div>
+         
+<!--         <div id="buttonbar">
+            <button id="restart" onclick="restart();">[]</button> 
+            <button id="rew" onclick="skip(-10)">&lt;&lt;</button>
+            <button id="play" onclick="vidplay()">&gt;</button>
+            <button id="fastFwd" onclick="skip(10)">&gt;&gt;</button>
+        </div>         
+ -->
+
+        <section id="content_01">
+          <h1>Feature Films</h1>
+          <h2>모바일/태블릿 모드에서만 보이는 영화메뉴 카테고리</h2>
+          <div class="con01Wrap">
+           <ul>
+            <li>
+                <a href="#">
+                    <p>Toy Story</p>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <p>Nimo</p>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <p>Incredibles</p>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <p>Inside Out</p>
+                </a>
+            </li>
+          </ul>
+          </div>
+        </section>
+        
+        <section id="content_02">
+        <div class="careerWrap">
+        <h1>Career Opportunities</h1>
+        <span class="spanLine"><!--underLine--></span>
+        <p>This isn’t just a chance to work on great movies or tell stories.<br /> It’s your opportunity to bring imagination to life. <br />At Pixar, we work side by side to turn ideas into reality. <br />Come see what we have to offer.</p>
+        </div>
+        <div class="con01_box">
+        
+        
+        <h2>카테고리 메뉴박스</h2>
+        <ul>
+            <li class="cate category_01">
+              <div>
+                <a href="#">
+                  <h2>AVALABLE INTERNSHIPS</h2>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                </a>
+              </div>
+            </li>
+            <li class="cate category_02">
+              <div>
+                <a href="#">
+                  <h2>Lorem Ipsum</h2>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                </a>
+              </div>
+            </li>
+            <li class="cate category_03">
+              <div>
+                <a href="#">
+                  <h2>Lorem Ipsum</h2>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                </a>
+              </div>
+            </li>
+            <li class="cate category_04">
+              <div>
+                <a href="#">
+                  <h2>Lorem Ipsum</h2>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                </a>
+              </div>
+            </li>
+            <li class="category_05 mob_hidden tab_hidden">
+              <div>
+                <a href="#">
+                  <h2>Lorem Ipsum</h2>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                </a>
+              </div>
+            </li>
+            <li class="category_06 mob_hidden tab_hidden">
+              <div>
+                <a href="#">
+                  <h2>Lorem Ipsum</h2>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                </a>
+              </div>
+            </li>
+         </ul>
+    </div>
+                
+        </section>
+        
+<!--         <button class="topBtn">↑ top</button> -->
+        
+        <footer id="footBox">
+        <div class="footWrap">
+        <ul>
+            <li><a href="https://www.facebook.com/DisneyPixar"><span>facebook</span></a></li>
+            <li><a href="https://twitter.com/disneypixar"><span>twitter</span></a></li>
+            <li><p>copyright yebinSong</p></li>
+            <li><p>Privacy Policy</p></li>
+            <li><p>renewer 2016 Pixar. All Rights Reserved.</p></li>
+        </ul>
+        </div>
+
+        </footer><!--// #footBox-->
+    </div><!--// #container-->
+</body>
+</html>
