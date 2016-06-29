@@ -1,0 +1,47 @@
+.works_box {
+  width: 100%;
+  height: auto;
+  margin-top: 120px; }
+  .works_box .subject_box {
+    width: 100%;
+    height: 100px;
+    border-bottom: 2px solid #333;
+    margin: 0 auto; }
+    .works_box .subject_box h1 {
+      width: 100px;
+      height: auto;
+      font-size: 1.5rem;
+      color: #111;
+      margin-left: 20px;
+      font-weight: bold;
+      line-height: 100px;
+      padding: 10px 0; }
+  .works_box .work_menu {
+    width: 100%;
+    height: 42vw;
+    float: left; }
+    .works_box .work_menu ul {
+      width: 1000px;
+      height: 800px;
+      margin: 0 auto; }
+      .works_box .work_menu ul li {
+        width: 400px;
+        height: 400px;
+        float: left;
+        margin-left: 7%;
+        margin-bottom: 3%;
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-image: url("../img/me.png");
+        border-radius: 50%; }
+        .works_box .work_menu ul li a {
+          width: 100%;
+          height: 100%;
+          border-radius: 50%;
+          font-size: 1rem;
+          color: #fff;
+          line-height: 400px;
+          text-align: center;
+          display: inline-block; }
+
+/*# sourceMappingURL=works.css.map */

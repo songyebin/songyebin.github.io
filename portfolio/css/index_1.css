@@ -1,0 +1,54 @@
+@import url(https://fonts.googleapis.com/css?family=Lobster&subset=latin,vietnamese,latin-ext,cyrillic);
+@import url(https://fonts.googleapis.com/css?family=Shadows+Into+Light&subset=latin,vietnamese,latin-ext,cyrillic);
+* {
+  transition: all 0.5s ease-out; }
+
+html, body {
+  height: 100%; }
+
+#nav {
+  background: #F7F0EC;
+  position: fixed;
+  width: 90px;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  z-index: 900;
+  box-shadow: 0px 0 4px #b6b6b6; }
+
+#index_body {
+  width: calc(100% - 90px);
+  height: 100%;
+  position: relative; }
+  #index_body > h1 {
+    width: 126px;
+    height: 50px;
+    /* background-color: #f5a; */
+    display: block;
+    position: absolute;
+    top: 33px;
+    left: 150px;
+    z-index: 10; }
+    #index_body > h1 > a {
+      font-family: 'Lobster', cursive;
+      color: #116128;
+      font-size: 2rem;
+      line-height: 50px;
+      text-align: center;
+      text-decoration: none;
+      margin-left: 10px; }
+  #index_body > #body_img {
+    position: fixed;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -100;
+    background-position: 70px -150px;
+    background-size: cover;
+    background-image: url(../img/2.jpg);
+    background-repeat: no-repeat; }
+
+/*# sourceMappingURL=index_1.css.map */
