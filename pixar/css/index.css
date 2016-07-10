@@ -65,29 +65,36 @@ video {
     height: 0;
     display: none; }
 
+  video {
+    width: 0;
+    height: 0;
+    display: none; }
+
+  .tab_hidden {
+    width: 0;
+    height: 0;
+    display: none; }
+
+  .conWrap {
+    width: 960px;
+    height: auto;
+    margin: 0 auto; }
+
   #topAdd {
-    width: 60vw;
-    height: 10vw;
-    background-color: #333;
-    padding: 1rem 20vw;
+    width: 100%;
+    height: 3rem;
+    background-color: #504739;
+    padding: 1rem 5vw;
     position: relative; }
 
   #topAdd > p {
     width: 100%;
     height: 2vw;
-    line-height: 4vw;
+    line-height: 1.36rem;
+    margin-top: 0.5vh;
     color: #fff;
-    font-size: 0.8rem;
+    font-size: 0.95rem;
     float: left; }
-
-  #topAdd > .addbox {
-    width: 100%;
-    height: 2vw;
-    float: left; }
-
-  #topAdd > .addbox > a {
-    color: #faa;
-    font-size: 0.9rem; }
 
   #topAdd > button {
     width: 10%;
@@ -98,117 +105,245 @@ video {
     font-size: 1.5em;
     position: absolute;
     top: 0;
-    right: 5vw; }
+    right: 10%;
+    background-color: #302517; }
 
   #container #headWrap {
     width: 100%;
-    height: 300px;
-    background-image: url("../img/findingDory_Wide.jpg");
-    background-size: cover;
-    background-repeat: no-repeat; }
+    height: 75px;
+    background-color: #111; }
     #container #headWrap #headBox {
-      width: 60vw;
-      height: 6vw;
-      padding: 1rem 20vw;
-      background-color: #eae;
-      position: absolute;
-      z-index: 1000;
-      left: 0; }
+      width: 100%;
+      /*                max-width: 640px;*/
+      height: auto;
+      /* 130px */
+      width: 100%;
+      margin-left: 3%;
+      margin-top: 2.5vw;
+      float: left; }
       #container #headWrap #headBox > h1 {
         width: 150px;
         height: 30px;
-        background-image: url("../img/pixarLogo.png");
-        background-repeat: no-repeat;
-        display: block;
-        float: left;
-        /*  >a{font-family: 'Lobster', cursive; color:#eee; font-size: 1.47rem; line-height: 50px; text-align: center; text-decoration: none; margin-left: 10px;} */ }
-      #container #headWrap #headBox .gnb_btn {
-        width: 50px;
-        height: 50px;
-        background-color: #fff;
-        float: right;
-        margin-bottom: 3rem; }
-        #container #headWrap #headBox .gnb_btn > ul {
-          width: 0;
-          height: 0;
-          display: none; }
+        display: inline-block;
+        float: left; }
+        #container #headWrap #headBox > h1 a {
+          display: inline-block;
+          width: 100%;
+          height: 100%;
+          cursor: pointer; }
+      #container #headWrap #headBox #gnb {
+        width: 24rem;
+        height: auto;
+        float: right; }
+        #container #headWrap #headBox #gnb > ul {
+          width: 100%;
+          /*600px*/
+          height: auto; }
+          #container #headWrap #headBox #gnb > ul::after {
+            content: "";
+            display: block;
+            clear: both; }
+        #container #headWrap #headBox #gnb > ul > li {
+          height: auto;
+          margin-right: 1.2vw;
+          float: left;
+          font-size: 1rem;
+          letter-spacing: 0.1em;
+          font-size: 22px; }
+          #container #headWrap #headBox #gnb > ul > li:nth-child(4) {
+            margin-right: 0; }
+          #container #headWrap #headBox #gnb > ul > li:last-child {
+            margin-right: 0; }
+        #container #headWrap #headBox #gnb > ul > li > a {
+          width: 50px;
+          height: 100px;
+          font-size: 1rem;
+          color: #fff;
+          font-weight: bold;
+          text-decoration: none; }
+          #container #headWrap #headBox #gnb > ul > li > a:hover {
+            border-bottom: 2px solid #E6E6E6; }
     #container #headWrap #movie_btn {
       width: 0;
       height: 0;
       display: none; }
   #container #banner {
-    width: 0;
-    height: 0;
-    display: none; }
+    float: left;
+    height: auto; }
+    #container #banner > #banner_box {
+      width: 100%;
+      height: 50vw;
+      margin: auto;
+      overflow: hidden; }
+      #container #banner > #banner_box > ul {
+        width: 500%;
+        height: 100%;
+        margin-left: -100%; }
+        #container #banner > #banner_box > ul > li {
+          width: calc(100% / 5);
+          height: 100%;
+          float: left;
+          background-repeat: no-repeat;
+          background-size: cover;
+          background-image: url("../img/banner02.jpg"); }
+          #container #banner > #banner_box > ul > li > span {
+            width: 0;
+            height: 0;
+            display: none; }
   #container #content_01 {
     float: left;
-    background-color: #ddd;
+    background-color: #111;
     width: 100%;
-    height: 20vw; }
+    height: 24vw; }
     #container #content_01 > h1 {
       color: #fff;
       font-size: 1rem;
-      width: 100px;
-      margin: 5px auto; }
-    #container #content_01 ul {
+      width: auto;
+      text-align: center;
+      margin-top: 10px; }
+    #container #content_01 .con01Wrap {
       width: 100%;
-      height: 10vw;
-      margin: 0 auto; }
-      #container #content_01 ul li {
-        width: calc(80% / 4);
-        height: 9vw;
-        background-color: #fff;
-        float: left;
-        margin-right: 5%; }
-        #container #content_01 ul li li:nth-child(1) {
-          background-image: url("../img/avalable_internships.jpg"); }
-        #container #content_01 ul li li:nth-child(2) {
-          background-image: url("../img/career_faqs.jpg"); }
-        #container #content_01 ul li li:nth-child(3) {
-          background-image: url("../img/creating_a_demo_reel.jpg"); }
-        #container #content_01 ul li li:nth-child(4) {
-          background-image: url("../img/Intern_life.jpg"); }
-        #container #content_01 ul li li:nth-child(5) {
-          background-image: url("../img/Intern_FAQs.jpg"); }
-        #container #content_01 ul li:last-child {
-          margin-right: 0; }
-        #container #content_01 ul li > a {
-          width: 100%;
+      height: auto;
+      margin-top: 3vw; }
+      #container #content_01 .con01Wrap ul {
+        width: 100%;
+        height: 12vw;
+        margin: 0 auto; }
+        #container #content_01 .con01Wrap ul li {
+          width: 25%;
           height: 100%;
-          background-color: #ecd;
-          display: block; }
+          float: left; }
+          #container #content_01 .con01Wrap ul li:nth-child(1) > a {
+            background-image: url("../img/toystory.jpg"); }
+          #container #content_01 .con01Wrap ul li:nth-child(2) > a {
+            background-image: url("../img/nimo.jpg"); }
+          #container #content_01 .con01Wrap ul li:nth-child(3) > a {
+            background-image: url("../img/incredicles.jpg"); }
+          #container #content_01 .con01Wrap ul li:nth-child(4) > a {
+            background-image: url("../img/insideOut.jpg"); }
+          #container #content_01 .con01Wrap ul li:last-child > a {
+            margin-right: 0; }
+          #container #content_01 .con01Wrap ul li > a {
+            width: auto;
+            height: 100%;
+            line-height: 15vw;
+            text-align: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            display: block;
+            border: 1px solid #222;
+            position: relative; }
+            #container #content_01 .con01Wrap ul li > a:hover > p {
+              height: 38%;
+              font-size: 1.1rem; }
+            #container #content_01 .con01Wrap ul li > a p {
+              position: absolute;
+              display: inline-block;
+              width: 100%;
+              height: 25%;
+              padding-top: 10px;
+              left: 0;
+              bottom: 0;
+              background-color: #000;
+              opacity: 0.7;
+              color: #fff; }
   #container #content_02 {
     width: 100%;
-    height: 600px;
-    background-color: #2aa;
-    float: left; }
-    #container #content_02 h1 {
-      text-align: center;
-      color: #ffba00;
-      font-size: 1.3rem;
-      padding: 2rem 0 1rem 0;
-      font-weight: bold;
-      text-decoration: underline; }
-    #container #content_02 p {
-      text-align: center;
-      color: #333;
-      font-size: 1rem;
-      line-height: 1.42rem; }
+    height: auto;
+    padding: 2vw 0 5vw 0;
+    background-color: #222;
+    float: left;
+    text-align: center; }
+    #container #content_02 .careerWrap {
+      padding-top: 5vw; }
+      #container #content_02 .careerWrap h1 {
+        width: 60vw;
+        text-align: center;
+        color: #ffba00;
+        font-family: 'PT Serif', serif;
+        font-size: 1rem;
+        padding: 0.5rem 0 0.5rem 0;
+        font-weight: bold;
+        border: 1px solid #ffba00;
+        margin: 0 auto; }
+      #container #content_02 .careerWrap .spanLine {
+        display: inline-block;
+        width: 10vw;
+        height: 1px;
+        margin-top: 50; }
+      #container #content_02 .careerWrap p {
+        text-align: center;
+        color: #fff;
+        font-size: 1rem;
+        line-height: 1.42rem;
+        margin-top: 1.5vw;
+        font-weight: normal; }
     #container #content_02 ul {
-      margin: 5px auto; }
+      width: 100%;
+      height: 160vw;
+      margin: 0 auto;
+      margin-top: 4vw; }
       #container #content_02 ul li {
-        width: 400px;
-        height: 120px;
-        background-color: #8af;
+        width: 100%;
+        height: 25%;
         float: left;
-        border: 1px solid  #111; }
-  #container #footBox {
-    float: left; }
-    #container #footBox > p {
-      width: 30vw;
-      margin: 20px auto;
-      font-size: 1rem;
-      color: #eee; } }
+        border: 1px solid #121212;
+        box-sizing: border-box;
+        background-size: cover;
+        position: relative; }
+        #container #content_02 ul li:nth-child(1) {
+          background-image: url("../img/pixar-office.jpg"); }
+        #container #content_02 ul li:nth-child(2) {
+          background-image: url("../img/officer.jpg"); }
+        #container #content_02 ul li:nth-child(3) {
+          background-image: url("../img/drowing.jpeg"); }
+        #container #content_02 ul li:nth-child(4) {
+          background-image: url("../img/working.jpg"); }
+        #container #content_02 ul li a {
+          width: 100%;
+          height: 100%;
+          line-height: 150px;
+          display: inline-block;
+          cursor: pointer; }
+        #container #content_02 ul li p {
+          position: absolute;
+          width: 88%;
+          height: 30%;
+          bottom: 16%;
+          color: #fff;
+          display: block;
+          padding: 6%;
+          background-color: rgba(85, 85, 85, 0.6); }
+  #container #footBox .mob_foot {
+    width: 100%;
+    height: 3rem;
+    margin: 0 auto;
+    margin-top: 2rem; }
+    #container #footBox .mob_foot ul {
+      width: 100%;
+      height: auto;
+      float: left; }
+      #container #footBox .mob_foot ul li {
+        width: auto;
+        height: auto;
+        float: left;
+        color: #fff;
+        display: inline-block;
+        height: 35px; }
+        #container #footBox .mob_foot ul li p {
+          line-height: 35px;
+          color: #fff; }
+        #container #footBox .mob_foot ul li:nth-child(1) {
+          width: 35px;
+          height: 35px;
+          background-color: #fff; }
+        #container #footBox .mob_foot ul li:nth-child(2) {
+          width: 35px;
+          height: 35px;
+          background-color: #faf;
+          margin-right: 15px; }
+        #container #footBox .mob_foot ul li:last-child {
+          margin-right: 0; } }
 @media screen and (min-width: 641px) and (max-width: 1024px) {
   video {
     width: 0;
@@ -502,7 +637,14 @@ video {
         height: auto;
         float: left;
         color: #fff;
-        margin-right: 1rem; }
+        display: inline-block;
+        height: 35px; }
+        #container #footBox .footWrap ul li p {
+          line-height: 35px;
+          color: #fff; }
+          #container #footBox .footWrap ul li p::after {
+            content: "|";
+            margin-right: 10px; }
         #container #footBox .footWrap ul li:nth-child(1) {
           width: 35px;
           height: 35px;
@@ -510,17 +652,9 @@ video {
         #container #footBox .footWrap ul li:nth-child(2) {
           width: 35px;
           height: 35px;
-          background-color: #faf; }
-        #container #footBox .footWrap ul li:nth-child(3) {
-          width: auto;
-          height: auto;
-          background-color: #aaf; }
-        #container #footBox .footWrap ul li:nth-child(4) {
-          width: auto;
-          height: auto;
-          background-color: #dfd; }
+          background-color: #faf;
+          margin-right: 15px; }
         #container #footBox .footWrap ul li:last-child {
-          background-color: #f3f;
           margin-right: 0; } }
 @media screen and (min-width: 1025px) {
   .pc_hidden {
@@ -548,8 +682,8 @@ video {
     text-align: center;
     margin-top: 8rem; }
 
-  /*#topAdd>.addbox{width: 100%; height:100%; float: left;}
-  #topAdd>.addbox>a{color: #faa;}*/
+    /*#topAdd>.addbox{width: 100%; height:100%; float: left;}
+#topAdd>.addbox>a{color: #faa;}*/
   #topAdd > button {
     width: 2rem;
     height: 2rem;
@@ -703,20 +837,20 @@ video {
     display: none; }
   #container #content_02 {
     background-color: #111;
-    /* // Stack items
-    @media screen and (max-width: 600px) {
-      
-      // IE gets fussy if this isn't here
-      body { margin:0; }
-      
-      .con01_box {height:auto;
-        ul,ul:hover {
-          li,li:hover {
-          position:relative; display:table; table-layout:fixed; width:100%;
-            -webkit-transition:none; transition:none;}
-        } // ul,ul:hover 
-      } //.con01_box
-    } // max-width : 600px */ }
+            /* // Stack items
+@media screen and (max-width: 600px) {
+  
+  // IE gets fussy if this isn't here
+  body { margin:0; }
+  
+  .con01_box {height:auto;
+    ul,ul:hover {
+      li,li:hover {
+      position:relative; display:table; table-layout:fixed; width:100%;
+        -webkit-transition:none; transition:none;}
+    } // ul,ul:hover 
+  } //.con01_box
+} // max-width : 600px */ }
     #container #content_02 .careerWrap {
       margin: 4rem auto; }
       #container #content_02 .careerWrap h1 {

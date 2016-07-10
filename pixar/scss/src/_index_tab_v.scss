@@ -345,6 +345,7 @@
                 } //li
             } // ul
         } // #content_02
+
         #footBox {
             .footWrap {
                 width: 60vw;
@@ -360,7 +361,16 @@
                         height: auto;
                         float: left;
                         color: $white;
-                        margin-right: 1rem;
+                        display: inline-block;
+                        height: 35px;
+                        p {
+                            line-height: 35px;
+                            color: #fff;
+                            &::after {
+                                content: "|";
+                                margin-right: 10px;
+                            }
+                        }
                         &:nth-child(1) {
                             width: 35px;
                             height: 35px;
@@ -370,19 +380,11 @@
                             width: 35px;
                             height: 35px;
                             background-color: #faf;
+                            margin-right: 15px;
                         }
-                        &:nth-child(3) {
-                            width: auto;
-                            height: auto;
-                            background-color: #aaf;
-                        }
-                        &:nth-child(4) {
-                            width: auto;
-                            height: auto;
-                            background-color: #dfd;
-                        }
+                        &:nth-child(3) {}
+                        &:nth-child(4) {}
                         &:last-child {
-                            background-color: #f3f;
                             margin-right: 0;
                         }
                     }
